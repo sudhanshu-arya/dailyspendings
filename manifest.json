@@ -8,12 +8,12 @@
     "orientation": "portrait-primary",
     "icons": [
         {
-            "src":"https://raw.githubusercontent.com/sudhanshu-arya/dailyspendings/master/icon.jpg",
+            "src":"https://raw.githubusercontent.com/sudhanshu-arya/dailyspendings/master/icon_192.jpg",
             "type":"img/jpg",
             "sizes":"192x192"
         },
         {
-            "src":"https://raw.githubusercontent.com/sudhanshu-arya/dailyspendings/master/icon.jpg",
+            "src":"https://raw.githubusercontent.com/sudhanshu-arya/dailyspendings/master/icon_512.jpg",
             "type":"img/jpg",
             "sizes":"512x512"
         }
