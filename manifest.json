@@ -1,0 +1,16 @@
+{
+    "name": "Daily Spendings",
+    "short_name": "Daily Spendings",
+    "start_url": "/templates/home.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src":"/icon.jpg",
+            "type":"img/jpg",
+            "sizes":"512x512"
+        }
+    ]
+}
