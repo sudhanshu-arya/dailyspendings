@@ -1,7 +1,7 @@
 {
     "name": "Daily Spendings",
     "short_name": "Daily Spendings",
-    "start_url": "http://0.0.0.0:8000/",
+    "start_url": "https://mydailyspendings.herokuapp.com/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
