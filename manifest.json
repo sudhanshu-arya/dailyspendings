@@ -8,7 +8,7 @@
     "orientation": "portrait-primary",
     "icons": [
         {
-            "src":"https://github.com/sudhanshu-arya/dailyspendings/blob/master/icon.jpg",
+            "src":"https://raw.githubusercontent.com/sudhanshu-arya/dailyspendings/master/icon.jpg",
             "type":"img/jpg",
             "sizes":"512x512"
         }
