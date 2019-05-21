@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+    <div class="top" id="topfix"><a class="alicebluetext" href="/">Home</a></div>
+    <p class="inv"><br></p>
+    <div class="footer"><a class="alicebluetext" href="/new/">+</a></div>
+
+    {% if totalt < 0 %}
+    <p class="toleft"><a href="/today/">Today</a></p> <p class="torightneg"> {{totalt|stringformat:"+d"|slice:"1:"}}</p>
+        {%endif%}
+    {% if totalt > 0 %}
+    <p class="toleft"><a href="/today/">Today</a></p> <p class="torightpos"> {{totalt}}</p>
+        {%endif%}
+    {% if totalt == 0 %}
+    <p class="toleft"><a href="/today/">Today</a></p> <p class="toright"> {{totalt}}</p>
+        {%endif%}
+    
+    {% if totalm < 0 %}
+    <p class="toleft"><a href="/thismonth/">This Month</a></p> <p class="torightneg"> {{totalm|stringformat:"+d"|slice:"1:"}}</p>
+        {%endif%}
+    {% if totalm > 0 %}
+    <p class="toleft"><a href="/thismonth/">This Month</a></p> <p class="torightpos"> {{totalm}}</p>
+        {%endif%}
+    {% if totalm == 0 %}
+    <p class="toleft"><a href="/thismonth/">This Month</a></p> <p class="toright"> {{totalm}}</p>
+        {%endif%}
+        
+    {% if m1 < 0 %}
+    <p class="toleft"><a href="/month/01/">January</a></p> <p class="torightneg"> {{m1|stringformat:"+d"|slice:"1:"}}</p>
+        {%endif%}
+    {% if m1 > 0 %}
+    <p class="toleft"><a href="/month/01/">January</a></p> <p class="torightpos"> {{m1}}</p>
+        {%endif%}
+    {% if m1 == 0 %}
+    <p class="toleft"><a href="/month/01/">January</a></p> <p class="toright"> {{m1}}</p>
+        {%endif%}
+
+    {% if m2 < 0 %}
+    <p class="toleft"><a href="/month/02/">February</a></p> <p class="torightneg"> {{m2|stringformat:"+d"|slice:"1:"}}</p>
+        {%endif%}
+    {% if m2 > 0 %}
+    <p class="toleft"><a href="/month/02/">February</a></p> <p class="torightpos"> {{m2}}</p>
+        {%endif%}
+    {% if m2 == 0 %}
+    <p class="toleft"><a href="/month/02/">February</a></p> <p class="toright"> {{m2}}</p>
+        {%endif%}
+    
+    {% if m3 < 0 %}
+    <p class="toleft"><a href="/month/03/">March</a></p> <p class="torightneg"> {{m3|stringformat:"+d"|slice:"1:"}}</p>
+        {%endif%}
+    {% if m3 > 0 %}
+    <p class="toleft"><a href="/month/03/">March</a></p> <p class="torightpos"> {{m3}}</p>
+        {%endif%}
+    {% if m3 == 0 %}
+    <p class="toleft"><a href="/month/03/">March</a></p> <p class="toright"> {{m3}}</p>
+        {%endif%}
+    
+    {% if m4 < 0 %}
+    <p class="toleft"><a href="/month/04/">April</a></p> <p class="torightneg"> {{m4|stringformat:"+d"|slice:"1:"}}</p>
+        {%endif%}
+    {% if m4 > 0 %}
+    <p class="toleft"><a href="/month/04/">April</a></p> <p class="torightpos"> {{m4}}</p>
+        {%endif%}
+    {% if m4 == 0 %}
+    <p class="toleft"><a href="/month/04/">April</a></p> <p class="toright"> {{m4}}</p>
+        {%endif%}
+    
+    {% if m5 < 0 %}
+    <p class="toleft"><a href="/month/05/">May</a></p> <p class="torightneg"> {{m5|stringformat:"+d"|slice:"1:"}}</p>
+        {%endif%}
+    {% if m5 > 0 %}
+    <p class="toleft"><a href="/month/05/">May</a></p> <p class="torightpos"> {{m5}}</p>
+        {%endif%}
+    {% if m5 == 0 %}
+    <p class="toleft"><a href="/month/05/">May</a></p> <p class="toright"> {{m5}}</p>
+        {%endif%}
+    
+    {% if m6 < 0 %}
+    <p class="toleft"><a href="/month/06/">June</a></p> <p class="torightneg"> {{m6|stringformat:"+d"|slice:"1:"}}</p>
+        {%endif%}
+    {% if m6 > 0 %}
+    <p class="toleft"><a href="/month/06/">June</a></p> <p class="torightpos"> {{m6}}</p>
+        {%endif%}
+    {% if m6 == 0 %}
+    <p class="toleft"><a href="/month/06/">June</a></p> <p class="toright"> {{m6}}</p>
+        {%endif%}
+    
+    {% if m7 < 0 %}
+    <p class="toleft"><a href="/month/07/">July</a></p> <p class="torightneg"> {{m7|stringformat:"+d"|slice:"1:"}}</p>
+        {%endif%}
+    {% if m7 > 0 %}
+    <p class="toleft"><a href="/month/07/">July</a></p> <p class="torightpos"> {{m7}}</p>
+        {%endif%}
+    {% if m7 == 0 %}
+    <p class="toleft"><a href="/month/07/">July</a></p> <p class="toright"> {{m7}}</p>
+        {%endif%}
+    
+    {% if m8 < 0 %}
+    <p class="toleft"><a href="/month/08/">August</a></p> <p class="torightneg"> {{m8|stringformat:"+d"|slice:"1:"}}</p>
+        {%endif%}
+    {% if m8 > 0 %}
+    <p class="toleft"><a href="/month/08/">August</a></p> <p class="torightpos"> {{m8}}</p>
+        {%endif%}
+    {% if m8 == 0 %}
+    <p class="toleft"><a href="/month/08/">August</a></p> <p class="toright"> {{m8}}</p>
+        {%endif%}
+    
+    {% if m9 < 0 %}
+    <p class="toleft"><a href="/month/09/">September</a></p> <p class="torightneg"> {{m9|stringformat:"+d"|slice:"1:"}}</p>
+        {%endif%}
+    {% if m9 > 0 %}
+    <p class="toleft"><a href="/month/09/">September</a></p> <p class="torightpos"> {{m9}}</p>
+        {%endif%}
+    {% if m9 == 0 %}
+    <p class="toleft"><a href="/month/09/">September</a></p> <p class="toright"> {{m9}}</p>
+        {%endif%}
+    
+    {% if m10 < 0 %}
+    <p class="toleft"><a href="/month/10/">October</a></p> <p class="torightneg"> {{m10|stringformat:"+d"|slice:"1:"}}</p>
+        {%endif%}
+    {% if m10 > 0 %}
+    <p class="toleft"><a href="/month/10/">October</a></p> <p class="torightpos"> {{m10}}</p>
+        {%endif%}
+    {% if m10 == 0 %}
+    <p class="toleft"><a href="/month/10/">October</a></p> <p class="toright"> {{m1}}</p>
+        {%endif%}
+    
+    {% if m11 < 0 %}
+    <p class="toleft"><a href="/month/11/">November</a></p> <p class="torightneg"> {{m11|stringformat:"+d"|slice:"1:"}}</p>
+        {%endif%}
+    {% if m11 > 0 %}
+    <p class="toleft"><a href="/month/11/">November</a></p> <p class="torightpos"> {{m11}}</p>
+        {%endif%}
+    {% if m11 == 0 %}
+    <p class="toleft"><a href="/month/11/">November</a></p> <p class="toright"> {{m11}}</p>
+        {%endif%}
+    
+    {% if m12 < 0 %}
+    <p class="toleft"><a href="/month/12/">December</a></p> <p class="torightneg"> {{m12|stringformat:"+d"|slice:"1:"}}</p>
+        {%endif%}
+    {% if m12 > 0 %}
+    <p class="toleft"><a href="/month/12/">December</a></p> <p class="torightpos"> {{m12}}</p>
+        {%endif%}
+    {% if m12 == 0 %}
+    <p class="toleft"><a href="/month/12/">December</a></p> <p class="toright"> {{m12}}</p>
+        {%endif%}
+    
+{% endblock %}

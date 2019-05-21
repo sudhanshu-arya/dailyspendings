@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}List{% endblock %}
+
+{% block content %}
+
+<div class="top" id="topfix"><a class="alicebluetext" href="/">Home</a></div>
+
+<p class="inv"><br></p>
+
+<div class="footer"><a class="alicebluetext" href="/new/">+</a></div>
+
+{% for a in objlist %}
+    {% if a.sum < 0 %}
+        <p class="toleft"><a href="/date/{{a.d}}">{{a.date}}</a></p> <p class="torightneg"> {{a.sum|stringformat:"+d"|slice:"1:"}}</p>
+        {%endif%} 
+    {% if a.sum > 0 %}
+        <p class="toleft"><a href="/date/{{a.d}}">{{a.date}}</a></p> <p class="torightpos"> {{a.sum}}</p>
+        {%endif%}
+
+    {% if a.sum == 0 %}
+        <p class="toleft"><a href="/date/{{a.d}}">{{a.date}}</a></p> <p class="toright"> {{a.sum}}</p>
+        {%endif%}
+{%endfor%}
+
+{% endblock %}

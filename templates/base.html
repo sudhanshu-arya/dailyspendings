@@ -1,0 +1,221 @@
+{% load static %}
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta name="viewport" content="user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  
+<style>
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(209, 197, 183);
+
+}
+
+div{
+    font-size: 70px;
+    padding: 10px;
+    background-color: rgb(226, 226, 226);
+    text-align: center;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
+}
+
+form{
+    font-size: 70px;
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+p.toleft{
+    font-size: 70px;
+    padding: 10px 0 10px 0;
+    margin-top: 0;
+    width: 70%;   
+    background-color: rgb(226, 226, 226);
+    float: left;
+    text-align: center;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
+    position: 10px 10px 10px 10px;
+}
+p.toright{
+    font-size: 70px;
+    padding: 10px 0 10px 0;
+    margin-top: 0;
+    width: 30%;
+    color: aliceblue;
+    background-color: rgb(73, 73, 73);
+    float: right;
+    text-align: center;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
+    position: 10px 10px 10px 10px;
+}
+
+p.torightneg{
+    font-size: 70px;
+    padding: 10px 0 10px 0;
+    width: 30%;
+    margin-top: 0;
+    color: aliceblue;
+    background-color: rgb(0, 58, 0);
+    float: right;
+    text-align: center;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
+    position: 10px 10px 10px 10px;
+}
+
+p.torightpos{
+    font-size: 70px;
+    padding: 10px 0 10px 0;
+    margin-top: 0;
+    margin:0;
+    width: 30%;
+    color: aliceblue;
+    background-color: rgb(80, 0, 0);
+    float: right;
+    text-align: center;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
+    position: 10px 10px 10px 10px;
+}
+
+p.inv{
+    font-size: 70px;
+    padding: 10px 0 10px 0;
+    margin-top: 0;
+    margin:0;
+    width: 100%;
+    color: aliceblue;
+    background-color: rgb(209, 197, 183);
+    float: left;
+    text-align: center;
+}
+
+input{
+    font-size: 70px;
+    border: 0;
+    background-color: rgb(226, 226, 226);
+    padding: 0px;
+    width: 100%;
+}
+
+a{
+    font-size: 70px;
+    color:black;
+    text-decoration: none;
+}
+
+button{
+    font-size: 70px;
+    border: solid;
+    padding: 20px 35px 20px 35px;
+    color:aliceblue;
+    background-color: rgb(46, 0, 0);
+    border-color:rgb(46, 0, 0);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
+    margin-bottom: 10px;
+    border-radius: 100%;
+}
+button:hover{
+    font-size: 70px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .8);
+
+}
+
+.footer{
+    font-size: 70px;
+    border: solid;
+    padding: 20px 35px 20px 35px;
+    color:aliceblue;
+    background-color: rgb(46, 0, 0);
+    border-color:rgb(46, 0, 0);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
+    margin-bottom: 10px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.footer:hover{
+
+    font-size: 70px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .8);
+
+}
+.top{
+    font-size: 70px;
+    background-color: rgb(46, 0, 0);
+    margin: 0;
+}
+.top:hover{
+    font-size: 70px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .8);
+}
+
+.alicebluetext{
+    font-size: 70px;
+    color: aliceblue;
+}
+
+#topfix{
+    font-size: 70px;
+    background-color: rgb(46, 0, 0);
+    margin: 0;
+    margin-left:-5% ;
+    position: fixed;
+    top:0;
+    width: 105%;
+}
+
+.helptext{
+    font-size: 15px;
+    display: block;
+}
+label{
+    display: block;
+}
+ul li{
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+
+.log{
+    font-size: 70px;
+    border: solid;
+    padding: 20px;
+    color:aliceblue;
+    background-color: rgb(46, 0, 0);
+    border-color:rgb(46, 0, 0);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    display: inline;
+    
+}
+
+.container{
+    background-color: rgb(209, 197, 183);
+    box-shadow: 0 0 0 0;
+}
+</style>
+  
+  <title>{% block title %} {% endblock %}</title>
+
+</head>
+
+<body>
+  <div class="container">
+
+    {% block content %}
+    {% endblock %}
+
+  </div>
+  
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Add{% endblock %}
+
+{% block content %}
+
+<div class="top"><a class="alicebluetext" href="/">Home</a></div>
+
+<form method="POST" action=".">{% csrf_token %}
+    <p> Item :<br><input type="text" name="info"></p>
+    <p> Price :<br><input type="number" name="cost"></p>
+    <button type="submit" class="alicebluetext">+</button>
+</form>
+{% endblock %}

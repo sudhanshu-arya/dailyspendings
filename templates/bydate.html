@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}List{% endblock %}
+
+{% block content %}
+
+<div class="top" id="topfix"><a class="alicebluetext" href="/">Home</a></div>
+<p class="inv"><br></p>
+<div class="footer"><a class="alicebluetext" href="/new/">+</a></div>
+
+{% for a in objlist %}
+
+    {% if a.cost < 0 %}
+        <p class="toleft">{{a.info}}</p> <p class="torightneg"> {{ a.cost|stringformat:"+d"|slice:"1:" }}</p>
+        {%endif%}
+
+    {% if a.cost > 0 %}
+        <p class="toleft">{{a.info}}</p> <p class="torightpos"> {{a.cost}}</p>
+        {%endif%}
+
+{% endfor %}
+
+{% endblock %}
