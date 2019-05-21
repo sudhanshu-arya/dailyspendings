@@ -1,7 +1,7 @@
 {
     "name": "Daily Spendings",
     "short_name": "Daily Spendings",
-    "start_url": "/templates/home.html",
+    "start_url": "http://0.0.0.0:8000/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
